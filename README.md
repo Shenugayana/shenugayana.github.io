@@ -271,3 +271,7 @@ Software Developer | Data Science & AI
 This repository contains the source code for my personal portfolio.
 
 The portfolio content, personal branding, project descriptions, and original visual assets are intended for personal use and should not be reproduced as another person's portfolio.
+
+## Hero portrait
+
+The supplied PNG portraits are preserved unchanged in `public/images/profile-dark.png` and `public/images/profile-light.png`. Their paths and shared accessible description are configured in `src/data/profile.ts`. CSS follows the existing saved theme, so the matching portrait is visible immediately on load and when the theme is toggled. The frame trims the supplied images' transparent top/side margins using CSS without editing the originals. If replacing them with differently framed images, update `.hero-portrait img` sizing and positioning in `src/identity.css`.

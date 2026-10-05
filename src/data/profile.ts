@@ -1,5 +1,8 @@
 export const profile = {
   name: "Shenugayana",
+  photoDark: "/images/profile-dark.png",
+  photoLight: "/images/profile-light.png",
+  photoAlt: "Shenugayana profile photo",
   email: "arulshen@gmail.com",
   github: "https://github.com/Shenugayana",
   linkedin: "https://www.linkedin.com/in/shenugayana/",

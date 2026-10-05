@@ -27,35 +27,56 @@ export function Home() {
           <p className="eyebrow">SOFTWARE ENGINEER / MSc DATA SCIENCE & AI</p>
           <span className="hero-index">PORTFOLIO — 2026</span>
         </div>
-        <div className="hero-display">
-          <h1>
-            Shenugayana<span className="hero-period">.</span>
-          </h1>
-          <p className="hero-outline" aria-hidden="true">
-            DEVELOPER<span className="outline-slash">/</span>
-          </p>
-          <span className="hero-coordinate" aria-hidden="true">
-            SOFTWARE → SYSTEMS → INTELLIGENCE
-          </span>
-        </div>
-        <div className="hero-bottom">
-          <p>
-            Engineering reliable software.
-            <br />
-            <span>Exploring data, AI & cybersecurity.</span>
-          </p>
-          <div className="hero-actions">
-            <a className="button" href="#projects">
-              View projects <ArrowDown size={17} />
-            </a>
-            <ExternalLink
-              className="button button-outline"
-              href={profile.github}
-            >
-              <Github size={17} />
-              GitHub
-            </ExternalLink>
+        <div className="hero-layout">
+          <div className="hero-copy">
+            <div className="hero-display">
+              <h1>
+                Shenugayana<span className="hero-period">.</span>
+              </h1>
+              <p className="hero-outline" aria-hidden="true">
+                DEVELOPER<span className="outline-slash">/</span>
+              </p>
+              <span className="hero-coordinate" aria-hidden="true">
+                SOFTWARE → SYSTEMS → INTELLIGENCE
+              </span>
+            </div>
+            <div className="hero-bottom">
+              <p>
+                Engineering reliable software.
+                <br />
+                <span>Exploring data, AI & cybersecurity.</span>
+              </p>
+              <div className="hero-actions">
+                <a className="button" href="#projects">
+                  View projects <ArrowDown size={17} />
+                </a>
+                <ExternalLink
+                  className="button button-outline"
+                  href={profile.github}
+                >
+                  <Github size={17} />
+                  GitHub
+                </ExternalLink>
+              </div>
+            </div>
           </div>
+          <figure className="hero-portrait">
+            <img
+              className="portrait-dark"
+              src={profile.photoDark}
+              alt={profile.photoAlt}
+              width="1004"
+              height="1159"
+              fetchPriority="high"
+            />
+            <img
+              className="portrait-light"
+              src={profile.photoLight}
+              alt={profile.photoAlt}
+              width="1004"
+              height="1159"
+            />
+          </figure>
         </div>
         <div className="progression">
           {[
